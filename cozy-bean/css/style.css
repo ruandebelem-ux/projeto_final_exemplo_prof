@@ -1,15 +1,15 @@
 :root {
-    --caramel: #C67A42;
-    --dark: #2D1A12;
-    --cream: #FDF9F4;
-    --beige: #F2E3D5;
-    --footer: #180D08;
-}
+    --color-primary-caramel: #C67A42;
+    --color-text-dark : #2D1A12;
+    --color-bg-cream: #FDF9F4;
+    --color-bg-beige: #F2E3D5;
+    --color-bg-dark-footer: #180D08;
+}   
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background: var(--cream);
-    color: var(--dark);
+    background: var(--color-bg-cream);
+    color: var(--color-bg-dark-footer);
 }
 
 .section-padding {
@@ -25,9 +25,10 @@ body {
     backdrop-filter: blur(10px);
 }
 
+
 .hero-section {
     height: 100vh;
-    background: url('../img/hero.jpg') center center/cover;
+    background: url('../img/hero.png') center center/cover;
     position: relative;
     display: flex;
     align-items: center;
@@ -45,17 +46,20 @@ body {
 }
 
 .hero-content h1 {
-    font-family: 'Playfair Display', serif;
-    color: #fff;
-    font-size: 4rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#C67A42 ;
+    font-size: 50px ;
 }
 
 .hero-content p {
     color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', 'Franklin Gothic Medium', 'Arial Narrow', Arial, Impact, Haettenschweiler, 'Arial Narrow Bold', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #C67A42;
+    font-size: 21px;
 }
 
 .btn-caramel {
-    background: var(--caramel);
+    background: var(--color-primary-caramel);
     color: #fff;
     border: none;
 }
@@ -71,7 +75,7 @@ body {
 }
 
 .counter {
-    color: var(--caramel);
+    color: var(--color-primary-caramel);
     font-size: 3rem;
 }
 
@@ -111,7 +115,7 @@ body {
 }
 
 .footer {
-    background: var(--footer);
+    background: var(--color-bg-dark-footer);
     color: #fff;
     padding: 80px 0;
 }
