@@ -36,6 +36,43 @@ body {
 
 .hero-section {
     height: 100vh;
+
+/* ==========================
+   Product page styles
+   ========================== */
+
+/* hero override for products page */
+.products-hero{
+    min-height: 50vh;
+    background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('../img/hero.png') center/cover no-repeat;
+    display:flex;
+    align-items:center;
+    color:#fff;
+    position:relative;
+}
+
+.products-hero .hero-content{z-index:2}
+
+.product-grid .product-card{border:0}
+.product-img{height:180px;object-fit:cover;border-bottom:1px solid rgba(0,0,0,.05)}
+.product-card .price{font-weight:700;color:var(--color-primary-caramel)}
+
+.filter-btn.active{background:var(--color-primary-caramel);color:#fff;border-color:var(--color-primary-caramel)}
+
+/* cart offcanvas adjustments */
+#cartItems .list-group-item{display:flex;justify-content:space-between;align-items:center}
+#cartItems .item-meta{flex:1;margin-left:12px}
+
+/* Responsive tweaks */
+@media (max-width:576px){
+    .product-img{height:140px}
+}
+
+/* Social icons - ensure official colors (override earlier values) */
+#instagram{color:#E1306C}
+#whatsapp{color:#25D366}
+#tiktok{color:#000000}
+#twitter{color:#1DA1F2}
     background: url('../img/hero.png') center center/cover;
     position: relative;
     display: flex;
@@ -161,7 +198,11 @@ body {
     color: #9e4873;
 }
 #twitter{
-    color:#FFFFFF ;
+    color:#000000;
+}
+#facebook{
+    color:#3b5998;
+    
 }
 
 
@@ -226,13 +267,13 @@ body {
          margin: 0;
    }
    .footer-links a{
-         color:var(--color-bg-cream)
+         color:var(--color-bg-cream);
          text-decoration:none;
          transition: color 0,3s ease;
 
     }
     .footer-links :houver{
-         color:#fff
+         color:#fff;
     }
     .social{
         display: flex;
@@ -248,7 +289,7 @@ body {
         height: 42px;
         border-radius: 50%;
         background:  rgb(255,255,255);
-        color:var(--color-bg-cream)
+        color:var(--color-bg-cream);
         transition: transform 0.3s ease, background 0,3s aese;
 
     }

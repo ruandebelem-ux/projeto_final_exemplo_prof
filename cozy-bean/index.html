@@ -49,7 +49,7 @@
                 <ul class="navbar-nav mx-auto">
 
                     <li class="nav-item">
-                        <a href="#cardapio" class="nav-link">Cardápio</a>
+                        <a href="products.html" class="nav-link">cardapio</a>
                     </li>
 
                     <li class="nav-item">
@@ -206,23 +206,45 @@
 
     </section>
     <!--=====================================
-         CARROSEL
+         CARROSSEL
     =====================================-->
-    <select class="container select-padding">
-        <div id="carouselcafe" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel"
-                <img src="img/galeria15.png" class="d-block w-100 rounded mx-auto">
-                <p>seu café perfeito</p>
-            </div>
-        <div id="carouselcafe" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-            <div> </div>
-                <img src="img/galeria10.png" class="d-block w-100 rounded mx-auto">
-                <p>cheiro ótimo</p>
+    <section class="carousel-section section-padding">
+        <div class="container">
+            <div id="carouselCafe" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselCafe" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselCafe" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/galeria15.png" class="d-block w-100 rounded mx-auto" alt="Xícara de café - seu café perfeito">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Seu café perfeito</h5>
+                            <p>Preparado com carinho e técnica artesanal.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="img/galeria10.png" class="d-block w-100 rounded mx-auto" alt="Grãos e aroma - cheiro ótimo">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Cheiro ótimo</h5>
+                            <p>Aromas que despertam memórias.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselCafe" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselCafe" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
             </div>
         </div>
-    </select>
+    </section>
 
     <!-- ===================================
          GALERIA
